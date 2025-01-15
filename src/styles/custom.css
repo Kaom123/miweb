@@ -20,4 +20,10 @@
     .no-hidden{
         display: flex;
     }
+
+    .fancy-border{
+       border-radius: 30% 70% 47% 53% / 30% 44% 56% 70% ;
+
+    }
+
 }

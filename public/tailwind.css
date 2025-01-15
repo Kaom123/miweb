@@ -571,6 +571,10 @@ video {
   display: flex;
 }
 
+.fancy-border{
+  border-radius: 30% 70% 47% 53% / 30% 44% 56% 70% ;
+}
+
 .relative {
   position: relative;
 }
@@ -619,6 +623,14 @@ video {
   height: 48vh;
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
+.min-h-\[48vh\] {
+  min-height: 48vh;
+}
+
 .w-\[20px\] {
   width: 20px;
 }
@@ -637,6 +649,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
 }
 
 @keyframes aparecerTwo {

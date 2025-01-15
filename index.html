@@ -52,7 +52,7 @@
   </section>
 
   <section id="webs" class="hidden animate-aparecerTwo webs holaPuto flex-col items-center gap-8">
-    <div class="rounded-md h-[48vh] min-h-29 w-[35vh] items-center justify-center m-auto bg-white p-2">
+    <div class="rounded-md h-[48vh] min-h-[48vh] w-[35vh] items-center justify-center m-auto bg-white p-2">
       <img src="/src/assets/landing.jpeg" alt="" class="imagen-portafolio object-contain m-auto rounded-lg h-[140px]">
       <h1 class="text-black text-center text-xl font-bold">Landing page</h1>
       <div class="flex flex-row justify-center gap-2">
@@ -63,7 +63,7 @@
       <button class="mt-2 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 m-auto block">Ver más</button>
     </div>
 
-    <div class="rounded-md h-[48vh] min-h-29 w-[35vh] items-center justify-center m-auto bg-white p-2">
+    <div class="rounded-md h-[48vh] min-h-[48vh] w-[35vh] items-center justify-center m-auto bg-white p-2">
       <img src="/src/assets/personal.jpg" alt="" class="imagen-portafolio object-contain m-auto rounded-lg h-[140px]">
       <h1 class="text-black text-center text-xl font-bold">Página Informativa</h1>
       <div class="flex flex-row justify-center gap-2">
@@ -74,7 +74,7 @@
       <button class="mt-2 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 m-auto block">Ver más</button>
     </div>
 
-    <div class="rounded-md h-[48vh] min-h-29 w-[35vh] items-center justify-center m-auto bg-white p-2">
+    <div class="rounded-md h-[48vh] min-h-[48vh] w-[35vh] items-center justify-center m-auto bg-white p-2">
       <img src="/src/assets/web1.avif" alt="" class="imagen-portafolio object-contain m-auto rounded-lg h-[140px]">
       <h1 class="text-black text-center text-xl font-bold">Página Personal</h1>
       <div class="flex flex-row justify-center gap-2">
@@ -86,7 +86,18 @@
       <button class="mt-2 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 m-auto block">Ver más</button>
     </div>
   </section>
+  
+  <section id="sobreMi" class="animate-aparecerTwo hidden no-hidden gap-3 flex-col items-center justify-center m-auto">
+   
+    <div class=" m-auto text-center  items-center justify-center w-[60%]">
+      <h1 class="font-bold text-lg">¿Quien soy?</h1>
+      <br>
+      <p>Especializado en HTML, CSS (Tailwind, Bootstrap) y JavaScript. Me enfoco en crear interfaces modernas, funcionales y atractivas, combinando creatividad con atención al detalle. Aprendo rápido y estoy listo para aportar soluciones efectivas a tus proyectos.</p>
+    </div>
+    <img src="/src/assets/images.jpg" alt="" class="object-contain h-[140px] fancy-border">
+  </section>
 
+  
   </main>
   <script>
   let botones = ['btn1', 'btn2', 'btn3'];
@@ -104,9 +115,15 @@
       if (id === 'btn2') {
         document.getElementById('webs').classList.replace('hidden', 'no-hidden');
         document.getElementById('servicios').classList.replace('no-hidden','hidden')
+        document.getElementById('sobreMi').classList.replace('no-hidden', 'hidden')
       } else if(id === 'btn1') {
         document.getElementById('webs').classList.replace('no-hidden', 'hidden');
         document.getElementById('servicios').classList.replace('hidden','no-hidden')
+        document.getElementById('sobreMi').classList.replace('no-hidden', 'hidden')
+      }else if(id === 'btn3'){
+        document.getElementById('sobreMi').classList.replace('hidden', 'no-hidden')
+        document.getElementById('webs').classList.replace('no-hidden', 'hidden');
+        document.getElementById('servicios').classList.replace('no-hidden','hidden')
       }
     });
   });
