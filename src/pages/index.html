@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/tailwind.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Poppins&display=swap" rel="stylesheet">
+  <title>AlejandroMerida</title>
+</head>
+<body class="text-white bg-black font-josefin organizar  gap-4">
+  <header class="h-[10vh] w-full">
+    <h2 class=" font-bold p-4 text-start w-[4.2ch] text-lg text-nowrap overflow-hidden hover:animate-aparecer"> <span class="text-black bg-white h-[20px] p-2 w-[20px] rounded-full">A</span> lejandro Merida</h2>
+  </header>
+
+  <main class="flex flex-col relative gap-3">
+    <section class="text-center font-semibold text-2xl">
+    <h1>Desarrollador Front-End</h1>
+    <h2>Creando Soluciones Elegantes y Funcionales</h2>
+  </section>
+<br>
+  <nav class=" bg-white flex flex-row m-auto items-center justify-evenly gap-4 text-black font-semibold w-[45vh] rounded-md py-2 ">
+    <button id="btn1" class="selected">Servicios</button>
+    <button id="btn2" class="">Portafolio</button>
+    <button id="btn3" class="">Sobre mi</button>
+  </nav>
+  <br>
+  <section id="servicios" class="flex-col no-hidden animate-aparecerTwo gap-3 items-center m-auto justify-center">
+    <div class="rounded-md h-29 min-h-29 w-[35vh] gap-4 grid bg-white p-3">
+      <div class="flex flex-row gap-8 items-center justify-evenly m-auto">
+        <img src="/src/assets/Tailwind_CSS_Logo.svg.png" alt="" class="object-contain h-[40px]">
+        <img src="/src/assets/Bootstrap_logo.svg.png" alt="" class="object-contain h-[40px]">
+      </div>
+      <p class="text-center text-black font-bold">Diseño web adaptable con Bootstrap y Tailwind CSS.</p>
+    </div>
+
+    <div class="rounded-md h-29 min-h-29 w-[35vh] gap-4 grid bg-white p-3">
+      <div class="flex flex-row gap-8 items-center justify-evenly m-auto">
+        <img src="/src/assets/HTML5_logo_and_wordmark.svg.png" alt="" class="object-contain h-[40px]">
+        <img src="/src/assets/JavaScript-logo.png" alt="" class="object-contain h-[40px]">
+      </div>
+      <p class="text-center text-black font-bold">Webs únicas con HTML y JavaScript.</p>
+    </div>
+
+    <div class="rounded-md h-29 min-h-29 w-[35vh] gap-4 grid bg-white p-3">
+      <div class="flex flex-row gap-8 items-center justify-evenly m-auto">
+        <img src="/src/assets/icons8-smartphone-64.png" alt="" class="object-contain h-[40px]">
+        <img src="/src/assets/icons8-ipad-pro-48.png" alt="" class="object-contain h-[40px]">
+        <img src="/src/assets/icons8-ordenador-portátil-48.png" alt="" class="object-contain h-[40px]">
+      </div>
+      <p class="text-center text-black font-bold">Webs optimizadas para móviles y tabletas.</p>
+    </div>
+  </section>
+
+  <section id="webs" class="hidden animate-aparecerTwo webs holaPuto flex-col items-center gap-8">
+    <div class="rounded-md h-[48vh] min-h-29 w-[35vh] items-center justify-center m-auto bg-white p-2">
+      <img src="/src/assets/landing.jpeg" alt="" class="imagen-portafolio object-contain m-auto rounded-lg h-[140px]">
+      <h1 class="text-black text-center text-xl font-bold">Landing page</h1>
+      <div class="flex flex-row justify-center gap-2">
+        <span class="caracteristica bg-blue-400 px-4 text-blue-900 font-semibold rounded-md font-monospace">Tailwind</span>
+        <span class="caracteristica bg-orange-600 px-4 text-orange-900 font-semibold rounded-md font-monospace">HTML</span>
+      </div>
+      <p class="text-center text-black">Diseño moderno y responsivo para destacar tu producto o servicio, ideal para convertir visitas en acciones.</p>
+      <button class="mt-2 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 m-auto block">Ver más</button>
+    </div>
+
+    <div class="rounded-md h-[48vh] min-h-29 w-[35vh] items-center justify-center m-auto bg-white p-2">
+      <img src="/src/assets/personal.jpg" alt="" class="imagen-portafolio object-contain m-auto rounded-lg h-[140px]">
+      <h1 class="text-black text-center text-xl font-bold">Página Informativa</h1>
+      <div class="flex flex-row justify-center gap-2">
+        <span class="caracteristica bg-orange-600 px-4 text-orange-900 font-semibold rounded-md font-monospace">HTML</span>
+        <span class="caracteristica bg-yellow-400 px-4 text-yellow-900 font-semibold rounded-md font-monospace">JavaScript</span>
+      </div>
+      <p class="text-center text-black">Proporciona información clara y concisa sobre un tema específico, ideal para blogs y sitios educativos.</p>
+      <button class="mt-2 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 m-auto block">Ver más</button>
+    </div>
+
+    <div class="rounded-md h-[48vh] min-h-29 w-[35vh] items-center justify-center m-auto bg-white p-2">
+      <img src="/src/assets/web1.avif" alt="" class="imagen-portafolio object-contain m-auto rounded-lg h-[140px]">
+      <h1 class="text-black text-center text-xl font-bold">Página Personal</h1>
+      <div class="flex flex-row justify-center gap-2">
+        <span class="caracteristica bg-orange-600 px-4 text-orange-900 font-semibold rounded-md font-monospace">HTML</span>
+        <span class="caracteristica bg-blue-400 px-4 text-blue-900 font-semibold rounded-md font-monospace">CSS</span>
+        <span class="caracteristica bg-yellow-400 px-4 text-yellow-900 font-semibold rounded-md font-monospace">JavaScript</span>
+      </div>
+      <p class="text-center text-black">Un sitio web personal para mostrar tu portafolio, blog y más, diseñado para reflejar tu personalidad y habilidades.</p>
+      <button class="mt-2 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 m-auto block">Ver más</button>
+    </div>
+  </section>
+
+  </main>
+  <script>
+  let botones = ['btn1', 'btn2', 'btn3'];
+
+  botones.forEach(id => {
+    const button = document.getElementById(id);
+
+    button.addEventListener('click', () => {
+      botones.forEach(btnId => {
+        document.getElementById(btnId).classList.remove('selected');
+      });
+
+      button.classList.add('selected');
+
+      if (id === 'btn2') {
+        document.getElementById('webs').classList.replace('hidden', 'no-hidden');
+        document.getElementById('servicios').classList.replace('no-hidden','hidden')
+      } else if(id === 'btn1') {
+        document.getElementById('webs').classList.replace('no-hidden', 'hidden');
+        document.getElementById('servicios').classList.replace('hidden','no-hidden')
+      }
+    });
+  });
+
+  </script>
+</body>
+</html>
